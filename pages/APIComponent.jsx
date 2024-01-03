@@ -45,12 +45,14 @@ const ApiComponent = () => {
   return (
     <div>
       <h1>Sorted Data:</h1>
-      <ul>
+      <ul id="mainmenu">
         {data.map((item) => (
+          //Each list item <li> should have a  key attribute set to item.id. Key is an element identifier by React
           <li key={item.id}>{item.name}</li>
         ))}
       </ul>
     </div>
+    
   );
 };
 

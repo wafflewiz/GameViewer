@@ -1,11 +1,18 @@
 // calls the API Component
 import ApiComponent from './APIComponent';
+import SearchComponent from './searchComponent';
+
 
 const Home = () => {
   return (
     <div>
-      <h1>Your Next.js App</h1>
-      <ApiComponent />
+      <h1>  
+        <ul id="mainmenu">
+          <li id="submenu"><a href='../index.tsx'>Home</a></li>
+          <li id="submenu"><a href='../searchPage.jsx'>Search</a></li>
+        </ul>
+      </h1>
+      <SearchComponent/>
     </div>
   );
 };
