@@ -1,6 +1,8 @@
 // calls the API Component
 import ApiComponent from './APIComponent';
-import SearchComponent from './searchComponent';
+//import SearchComponent from './testcomponent';
+import SearchComponent from './SearchComponent';
+
 
 
 const Home = () => {

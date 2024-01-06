@@ -21,12 +21,10 @@ const ResultsComponent = ({ query }) => {
 
     fetchData();
   }, [query]);
-
   return (
     <div>
-      <h2>Search Results:</h2>
       <ul>
-        {results.map((result, index) => (
+        {results.sort((a, b) => a.name.localeCompare(b.name)).map((result, index) => (
           <li key={index}>{result.name}</li>
         ))}
       </ul>
